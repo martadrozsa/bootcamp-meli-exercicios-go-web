@@ -1,0 +1,4 @@
+::1 - [Mon, 30 May 2022 09:50:43 -03] "GET / HTTP/1.1 404 198ns "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" "
+[GIN] 2022/05/30 - 09:50:43 | 404 |     269.152µs |             ::1 | GET      "/"
+::1 - [Mon, 30 May 2022 09:50:53 -03] "GET /hello-world HTTP/1.1 200 49.879µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" "
+[GIN] 2022/05/30 - 09:50:53 | 200 |      94.716µs |             ::1 | GET      "/hello-world"

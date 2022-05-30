@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nome": "Celular",
+    "cor": "Preto",
+    "preco": 2500,
+    "estoque": true,
+    "codigo": "ele3236",
+    "publicacao": true,
+    "dataCriacao": "25/05/2022"
+  },
+  {
+    "id": 2,
+    "nome": "Cama",
+    "cor": "Cinza",
+    "preco": 3500,
+    "estoque": true,
+    "codigo": "ca2526",
+    "publicacao": true,
+    "dataCriacao": "25/05/2022"
+  },
+  {
+    "id": 3,
+    "nome": "Notebook",
+    "cor": "Prata",
+    "preco": 6200,
+    "estoque": true,
+    "codigo": "ele3239",
+    "publicacao": true,
+    "dataCriacao": "25/05/2022"
+  },
+  {
+    "id": 4,
+    "nome": "Fone",
+    "cor": "Preto",
+    "preco": 400,
+    "estoque": false,
+    "codigo": "pe5859",
+    "publicacao": true,
+    "dataCriacao": "25/05/2022"
+  }
+]
