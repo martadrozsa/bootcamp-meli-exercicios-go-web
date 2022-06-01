@@ -11,15 +11,14 @@ Exercício 2 - Olá {nome}
 3. Acesse o end-point para verificar se a resposta está correta.
 */
 
-func printName(c *gin.Context) {
+func helloHandler(c *gin.Context) {
 	c.JSON(200, gin.H{
 		"mensagem": "Marta",
 	})
 }
 
 func main() {
-	r := gin.Default()
-
-	r.GET("/hello", printName)
-	r.Run()
+	router := gin.Default()
+	router.GET("/ola", helloHandler)
+	router.Run()
 }
