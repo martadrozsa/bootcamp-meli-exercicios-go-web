@@ -7,9 +7,9 @@ import (
 )
 
 type product struct {
-	Name string
-	Price int
-	Published bool
+	Name string `json:"name"`
+	Price int	`json:"price"`
+	Published bool `json:"published"`
 }
 
 func main()  {
@@ -18,7 +18,8 @@ func main()  {
 		Price: 1500,
 		Published: true,
 	}
-
+	
+					//retorna um json
 	jsonData, err := json.Marshal(p)
 	if err != nil {
 		log.Fatal(err)
@@ -26,9 +27,4 @@ func main()  {
 
 	fmt.Println(string(jsonData))
 
-	if err := json.Unmarshal([]byte(jsonData), &p); err != nil {
-		log.Fatal(err)
-	}
-
-	fmt.Println(p)
 }

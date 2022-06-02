@@ -1,15 +1,16 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 )
+// w http.ResponseWriter -->
+// req *http.Request --> ponteiro
 
 func helloHandler1(w http.ResponseWriter, req *http.Request) {
-	fmt.Fprint(w, "<h1>Olá</h1>\n")
+	w.Write([]byte(`<h1>Olá</h1>`))
 }
 
 func main() {
-	http.HandleFunc("/hello1", helloHandler1)
+	http.HandleFunc("/hello", helloHandler1)
 	http.ListenAndServe("localhost:8080", nil)
 }
